@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.app_menu {
+  &.quauthly {
+    & > a {
+      color: $quauthlyColorPrimary;
+      border-color: $quauthlyColorPrimary;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.app_header {
+  &.cedricc {
+    .app_back {
+      color: $cedriccColorPrimary;
+    }
+
+    .app_slogan {
+      color: $cedriccColorPrimary;
+    }
+
+    @media screen and (min-width: 1024px) {
+        background-color: $cedriccColorPrimary;
+
+        .app_back {
+          color: $defaultColorWhite;
+        }
+    
+        .app_slogan {
+          color: $defaultColorWhite;
+        }
+    }
+  }
+}

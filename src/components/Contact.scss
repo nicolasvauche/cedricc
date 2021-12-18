@@ -1,0 +1,103 @@
+@import "../variables";
+
+.app_contact {
+  .app_form {
+    margin: 1rem 2rem;
+
+    .app_form_group {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.25rem;
+
+        &.checkbox {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          align-items: flex-start;
+          font-size: 0.8rem;
+          color: $defaultColorText !important;
+
+          input[type="checkbox"] {
+            margin: 0 0.5rem 0 0;
+          }
+        }
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        box-sizing: border-box;
+        padding: 0.25rem 0.5rem;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        color: $defaultColorText;
+        background-color: $defaultColorWhite;
+        border: 1px solid $defaultColorText;
+        border-radius: 0.25rem;
+
+        &.error {
+          color: red;
+          border-color: red;
+        }
+      }
+
+      .app_form_error {
+        margin: 0.25rem 0 0 0;
+        font-size: 0.8rem;
+        color: red;
+
+        &:before{
+          content: "> ";
+        }
+      }
+
+      &.app_form_submit {
+        text-align: right;
+
+        button {
+          padding: 0.5rem 1.5rem;
+          font-family: "Poppins", sans-serif;
+          font-size: 1.5rem;
+          background-color: $defaultColorWhite;
+          border-width: 1px;
+          border-style: solid;
+          border-radius: 0.5rem;
+          box-shadow: 2px 2px 8px $defaultColorText;
+        }
+      }
+    }
+
+    &.cedricc {
+      .app_form_group {
+        label {
+          color: $cedriccColorPrimary;
+        }
+
+        &.app_form_submit {
+          button {
+            color: $cedriccColorPrimary;
+            border-color: $cedriccColorPrimary;
+          }
+        }
+      }
+    }
+
+    &.quauthly {
+      .app_form_group {
+        label {
+          color: $quauthlyColorPrimary;
+        }
+
+        &.app_form_submit {
+          button {
+            color: $quauthlyColorPrimary;
+            border-color: $quauthlyColorPrimary;
+          }
+        }
+      }
+    }
+  }
+}

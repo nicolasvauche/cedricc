@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.app_menu {
+  &.cedricc {
+    & > a {
+      color: $cedriccColorPrimary;
+      border-color: $cedriccColorPrimary;
+    }
+  }
+}

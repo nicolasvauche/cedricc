@@ -1,0 +1,39 @@
+@import "../variables";
+
+.app_thumbnails {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  margin: 1rem;
+
+  .app_thumbnail {
+    border-radius: 0.5rem;
+    background-color: $defaultColorWhite;
+    box-shadow: 2px 2px 8px $defaultColorText;
+
+    .app_thumbnail_image,
+    .app_thumbnail_logo {
+      border-radius: inherit;
+
+      img {
+        display: block;
+        border-radius: inherit;
+      }
+    }
+
+    .app_thumbnail_logo {
+      padding: 1rem 0.5rem;
+    }
+  }
+}
+
+.app_two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.fixed {
+  position: sticky;
+  bottom: 0;
+}

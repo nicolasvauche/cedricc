@@ -1,0 +1,43 @@
+@import "../variables";
+
+.app_menu {
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 0 0.5rem;
+  height: 100%;
+
+  & > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    font-family: "quantum";
+    font-size: 2.5rem;
+    text-decoration: none;
+    background-color: $defaultColorWhite;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1rem;
+
+    & > small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+
+    & > a {
+      height: 20vh;
+    }
+  }
+}

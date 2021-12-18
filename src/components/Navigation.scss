@@ -1,0 +1,26 @@
+@import "../variables";
+
+.app_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.25rem 1rem;
+  color: $defaultColorWhite;
+
+  a {
+    color: $defaultColorWhite;
+
+    .material-icons,
+    .material-icons-outlined {
+      font-size: 3.5rem;
+    }
+  }
+
+  &.cedricc {
+    background-color: $cedriccColorPrimary;
+  }
+
+  &.quauthly {
+    background-color: $quauthlyColorPrimary;
+  }
+}

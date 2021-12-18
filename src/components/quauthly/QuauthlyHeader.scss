@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.app_header {
+  &.quauthly {
+    .app_back {
+      color: $quauthlyColorPrimary;
+    }
+
+    .app_slogan {
+      color: $quauthlyColorPrimary;
+    }
+
+    @media screen and (min-width: 1024px) {
+      background-color: $quauthlyColorPrimary;
+
+      .app_back {
+        color: $defaultColorWhite;
+      }
+  
+      .app_slogan {
+        color: $defaultColorWhite;
+      }
+    }
+  }
+}

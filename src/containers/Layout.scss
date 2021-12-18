@@ -1,0 +1,71 @@
+@import "../variables";
+
+.app_layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .app_main {
+    overflow-y: auto;
+    padding: 1rem 0.5rem;
+    height: 100%;
+    background-color: $defaultColorWhite;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+      padding: 0.5rem 1rem;
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 1.5rem;
+    }
+
+    .app_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 1.5rem;
+      font-family: "quantum";
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.25rem;
+      background-color: $defaultColorWhite;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 0.5rem;
+      box-shadow: 2px 2px 8px $defaultColorText;
+    }
+
+    &.cedricc {
+      background-image: $cedriccBackgroundImage;
+
+      h1 {
+        color: $cedriccColorPrimary;
+      }
+
+      .app_button {
+        color: $cedriccColorPrimary;
+        border-color: $cedriccColorPrimary;
+
+        &.active {
+          color: $defaultColorWhite;
+          background-color: $cedriccColorPrimary;
+        }
+      }
+    }
+
+    &.quauthly {
+      background-image: $quauthlyBackgroundImage;
+
+      h1 {
+        color: $quauthlyColorPrimary;
+      }
+    }
+  }
+}

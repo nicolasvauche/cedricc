@@ -1,0 +1,30 @@
+@import "../variables";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 0 1.5rem;
+  background-color: $defaultColorWhite;
+  background-image: $cedriccBackgroundImage;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .app_logo {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+
+    .app_logo {
+      width: 125%;
+      height: auto;
+    }
+  }
+}
